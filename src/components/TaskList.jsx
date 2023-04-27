@@ -11,7 +11,7 @@ const TaskList = () => {
         <div className="w-6/12">
           {tasks.map((task) => (
             <div
-              className="bg-gray-900 px-20 py-5 text-white shadow-2xl mb-4 flex justify-between"
+              className="bg-blue-900 px-20 py-5 text-white shadow-2xl mb-4 flex justify-between"
               key={task.id}
             >
               <div className="text-left">
@@ -22,7 +22,7 @@ const TaskList = () => {
                   className="bg-purple-600 hover:bg-purple-500 py-1 px-3 mt-2 "
                   onClick={() => toggleTaskDone(task.id)}
                 >
-                  {task.done ? "Undone" : "Done"}
+                  {task.done ? "Sin Finalizar" : "Finalizada"}
                 </button>
               </div>
               <div>
@@ -30,21 +30,21 @@ const TaskList = () => {
                   to={`/edit/${task.id}`}
                   className="bg-gray-600 hover:bg-gray-500 py-2 px-4 mr-2"
                 >
-                  Edit
+                  Editar
                 </Link>
 
                 <button
                   className="bg-red-600 hover:bg-red-500 py-2 px-4 mr-2"
                   onClick={() => deleteTask(task.id)}
                 >
-                  Delete
+                  Eliminar
                 </button>
               </div>
             </div>
           ))}
         </div>
       ) : (
-        <p className="bg-gray-600 text-gray-100 py-5 px-10">No Tasks yet</p>
+        <p className="bg-gray-600 text-gray-100 py-5 px-10">Sin tareas</p>
       )}
     </div>
   );

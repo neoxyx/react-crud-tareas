@@ -7,14 +7,14 @@ const initialState = {
   tasks: [
     {
       id: "1",
-      title: "some title",
-      description: "some description",
+      title: "algun título",
+      description: "alguna descripción",
       done: false,
     },
     {
       id: "2",
-      title: "some title",
-      description: "some description",
+      title: "algun título",
+      description: "alguna descripción",
       done: false,
     },
   ],
@@ -60,7 +60,7 @@ export const GlobalProvider = ({ children }) => {
         addTask,
         updateTask,
         deleteTask,
-        toggleTaskDone
+        toggleTaskDone,
       }}
     >
       {children}

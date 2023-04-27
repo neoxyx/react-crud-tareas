@@ -41,7 +41,7 @@ const TaskForm = () => {
     <div className="flex justify-center items-center h-3/4">
       <form onSubmit={handleSubmit} className="bg-gray-900 p-10">
         <h2 className="text-3xl mb-7">
-          {task.id ? "Update " : "Create "}A Task
+          {task.id ? "Update " : "Create "}Una Tarea
         </h2>
         <div className="mb-5">
           <input

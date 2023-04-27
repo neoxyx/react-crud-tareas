@@ -1,3 +1,9 @@
 # React Context CRUD
 
-This is a simple CRUD application using React Context API.
+CRUD simple usando React Context API.
+
+Clonar repo.
+
+Instalar dependencias con npm i
+
+Ejecutar proyecto en web con npm run dev
